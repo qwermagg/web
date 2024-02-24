@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Сайт с кнопкой, которая считает клики</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <title>Click Counter</title>
 </head>
 <body>
-  <div class="container">
-    <button id="button">Нажми меня!</button>
-    <span id="counter">0</span>
-    <button id="reset-button">Сбросить</button>
-  </div>
-  <script src="main.js"></script>
+    <div class="container">
+        <p id="clickCount" class="click-counter">0</p>
+        <div class="button-row">
+            <button id="clickButton" class="rounded-button">Click me</button>
+            <button id="resetButton" class="red-button rounded-button">Reset</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>

@@ -1,15 +1,19 @@
-const button = document.querySelector('#button');
-const counter = document.querySelector('#counter');
-const resetButton = document.querySelector('#reset-button');
+// Initialize click count
+let clickCount = 0;
 
-let count = 0;
+// Get references to the buttons and click count display
+const clickButton = document.getElementById('clickButton');
+const resetButton = document.getElementById('resetButton');
+const clickCountDisplay = document.getElementById('clickCount');
 
-button.addEventListener('click', () => {
-  count++;
-  counter.textContent = count;
+// Event listener for the click button
+clickButton.addEventListener('click', () => {
+    clickCount++;
+    clickCountDisplay.textContent = clickCount;
 });
 
+// Event listener for the reset button
 resetButton.addEventListener('click', () => {
-  count = 0;
-  counter.textContent = count;
+    clickCount = 0;
+    clickCountDisplay.textContent = clickCount;
 });
